@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+// ---------------------------------------------------------------------------
+.nav-tags .nav-item {
+    .nav-link {
+        letter-spacing: 2px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        padding: 10px 20px;
+        margin: 0px 20px;
+        display: inline-block;
+        position: relative;
+        opacity: 0.75;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+    }
+    // .nav-link:hover {
+    //     // color: #892692;
+    //     color: #000;
+    //     transition: 0.2s;
+    //     opacity: 1;
+    // }
+    // .nav-link::before {
+    //     transition: 300ms;
+    //     height: 2px;
+    //     content: "";
+    //     position: absolute;
+    //     // background-color:#ec67ff;
+    //     background-color: #fff;
+    // }
+
+    // .nav-link::before {
+    //     width: 0%;
+    //     bottom: 10px;
+    // }
+
+    // .nav-link:hover::before {
+    //     width: 100%;
+    // }
+
+    // -------------------
+
+    .nav-link:hover {
+        background-color: #ff56bb;
+        box-shadow: 0px 0px 15px #ff56a3;
+        color: #fff;
+        transform: translateY(-3px);
+    }
+
+    .nav-link:active {
+        transform: translateY(-1px);
+    }
+}
+
+// --------------------
+
+.stc-img {
+    width: 111px;
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    .stc-img {
+        width: 70px;
+        position: relative;
+    }
+    .nav-link {
+        margin: 0 !important;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    .stc-img {
+        width: 75px;
+        position: relative;
+    }
+    .nav-link {
+        margin: 0 !important;
+    }
+}

@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+// --------------------------------------------------------
+// banner
+.ban-bk {
+    // background: linear-gradient(357deg, #262b31 0%, #2c3137 100%);
+    background: linear-gradient(27deg, #252a30fa 64%, #c683d7 103%);
+}
+
+.sec-700 {
+    height: 700px;
+}
+
+.stc-tp {
+    height: 10px;
+    // background: #ff0099;
+    background: rgb(255, 86, 187);
+}
+
+.stc-tpp {
+    position: relative;
+    top: -95px;
+    font-family: "Pacifico", cursive;
+}
+.stc-txt {
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+}
+.stc-htxt {
+    color: #ff56bb;
+    font-family: "Pacifico", cursive;
+}
+.stc-font {
+    font-family: "Pacifico", cursive;
+}
+.stc-bg {
+    background: #ff56bbb3;
+}
+.stc-purple {
+    .purple-gradient {
+        padding: 35px;
+        box-shadow: rgb(50 50 93 / 74%) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        // box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        width: 318px;
+        height: 345px;
+        display: flex;
+        justify-content: center;
+    }
+}
+.bx-sh {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+// ---------------------------
+.sleep-txt {
+    font-size: 78px;
+    font-weight: 300;
+    padding-left: 130px;
+}
+.sleep-bk {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.scon-txt {
+    // font-family: cern-light, sans-serif;
+    font-size: 3.37rem;
+    font-weight: 400;
+    line-height: 1.07;
+}
+.sub-txt{
+    font-size: 17px;
+}
+.sub-txxt{
+    font-size: 14px;
+}
+.card-footer{
+    padding: 0 !important;
+}
+.sleep{
+
+    .card{
+        height: 450px !important;
+    }
+}
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    .ban-bk {
+        background: linear-gradient(357deg, #262b31 0%, #2c3137 100%);
+    }
+    .fix-wid {
+        height: 400px;
+    }
+    .stc-tpp {
+        top: -65px;
+    }
+    .sec-700 {
+        height: auto;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {
+    .ban-bk {
+        background: linear-gradient(357deg, #262b31 0%, #2c3137 100%);
+    }
+    .fix-wid {
+        height: 400px;
+    }
+    .stc-tpp {
+        top: -65px;
+    }
+    .sec-700 {
+        height: auto;
+    }
+}

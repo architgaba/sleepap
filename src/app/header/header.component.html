@@ -1,0 +1,43 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark  purple darken-3 py-2 " [containerInside]="false" mdbStickyHeader >
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand>
+        <a class="navbar-brand" href="#">
+            <img src="\assets\logo.png" class="img-fluid p-2 ml-4 stc-img">
+        </a>
+    </mdb-navbar-brand>
+    <!-- Collapsible content -->
+    <links>
+
+        <!-- Links -->
+        <ul class="navbar-nav pl-5">
+            <li class="nav-item active px-4">
+                <a class="nav-link waves-light" mdbPageScroll routerLink="/home" mdbWavesEffect href="#home">
+                    Home<span class="sr-only">(current)</span> 
+                </a>
+            </li>
+            <li class="nav-item px-4">
+                <a class="nav-link waves-light" mdbPageScroll routerLink="/home"  mdbWavesEffect href="#about">About</a>
+            </li>
+            <li class="nav-item px-4">
+                <a class="nav-link waves-light" mdbPageScroll routerLink="/home" mdbWavesEffect href="#products">Products</a>
+            </li>
+            <li class="nav-item px-4">
+                <a class="nav-link waves-light" mdbPageScroll routerLink="/home" mdbWavesEffect href="#contact">Contact</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect><mdb-icon fas icon="shopping-cart"></mdb-icon></a>
+            </li>
+        </ul>
+        <!-- Links -->
+    </links>
+
+
+    <!-- Collapsible content -->
+ 
+
+</mdb-navbar>
+<!--/.Navbar-->
