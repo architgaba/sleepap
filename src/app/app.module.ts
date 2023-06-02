@@ -15,7 +15,8 @@ import { FooterComponent } from './footer/footer.component'
 // MDB Angular Pro
 import { IconsModule } from 'ng-uikit-pro-standard';
 import { DescriptionComponent } from './description/description.component';
-import { FaqQuestionsComponent } from './faq-questions/faq-questions.component'
+import { FaqQuestionsComponent } from './faq-questions/faq-questions.component';
+import { ChatComponentComponent } from './chat-component/chat-component.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { FaqQuestionsComponent } from './faq-questions/faq-questions.component'
     ContactUsComponent,
     FooterComponent,
     DescriptionComponent,
-    FaqQuestionsComponent
+    FaqQuestionsComponent,
+    ChatComponentComponent
   ],
   imports: [
     BrowserModule,
