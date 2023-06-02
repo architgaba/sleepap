@@ -2,7 +2,7 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular
 import { FormBuilder } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Subject } from 'rxjs';
-import { debounceTime } from 'rxjs/operators';
+import { debounceTime, delay } from 'rxjs/operators';
 import { ApiService } from '../faq-questions/api-service';
 import { ChatService } from './chat-service';
 
@@ -47,18 +47,22 @@ export class ChatComponentComponent implements OnInit {
     this.messages.push(`You: ${query}`);
     this.scrollToBottom();
   
-    setTimeout(() => {
-      this.service.getChatCompletions(query)
-        .subscribe((response: any) => {
-          const answer = response.choices[0].message.content;
-          this.messages.push(`Bot: ${answer}`);
-          this.scrollToBottom();
-        }, error => {
-          console.error(error);
-        });
+    this.service.getChatCompletions(query)
+      .pipe(delay(500)) // Add a delay of 500 milliseconds
+      .subscribe((response: any) => {
+        const answer = response.choices[0].message.content;
+        this.messages.push(`Bot: ${answer}`);
+        this.scrollToBottom();
+        this.clearSearchQuery(); // Move the clearSearchQuery call here
+      }, error => {
+        console.error(error);
+      });
+  }
   
+  clearSearchQuery() {
+    setTimeout(() => {
       this.searchQuery = '';
-    }, 500); // Add a delay of 500 milliseconds
+    }, 500); // Delay clearing the search query by 500 milliseconds
   }
   
   scrollToBottom() {
