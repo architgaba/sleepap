@@ -1,6 +1,7 @@
 import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ButtonsModule, CardsModule, InputsModule, MDBBootstrapModulesPro, NavbarModule,SmoothscrollModule } from 'ng-uikit-pro-standard';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AccordionModule, ButtonsModule, CardsModule, InputsModule, MDBBootstrapModulesPro, NavbarModule,SmoothscrollModule } from 'ng-uikit-pro-standard';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,7 +14,8 @@ import { FooterComponent } from './footer/footer.component'
 // For MDB Angular Pro
 // MDB Angular Pro
 import { IconsModule } from 'ng-uikit-pro-standard';
-import { DescriptionComponent } from './description/description.component'
+import { DescriptionComponent } from './description/description.component';
+import { FaqQuestionsComponent } from './faq-questions/faq-questions.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,15 +23,18 @@ import { DescriptionComponent } from './description/description.component'
     HomeComponent,
     ContactUsComponent,
     FooterComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    FaqQuestionsComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MDBBootstrapModulesPro.forRoot(),
     CarouselModule, WavesModule, ButtonsModule, 
     CardsModule, InputsModule,NavbarModule,IconsModule,
-    ReactiveFormsModule,FormsModule,SmoothscrollModule
+    ReactiveFormsModule,FormsModule,SmoothscrollModule,
+    AccordionModule, WavesModule
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   providers: [],
